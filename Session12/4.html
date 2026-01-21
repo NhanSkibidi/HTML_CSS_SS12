@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<style>
+.pricing{
+  text-align: center;
+  padding: 80px 20px;
+  background: #f8fafc;
+}
+
+.tag{
+  display: inline-block;
+  background: #eef2ff;
+  color: #6366f1;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.pricing h1{
+  margin: 15px 0 5px;
+}
+
+.sub{
+  color: #64748b;
+  margin-bottom: 50px;
+}
+
+.plans{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.plan{
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.plan h2{
+  color: #6366f1;
+  margin: 20px 0;
+}
+
+.plan h2 span{
+  font-size: 14px;
+  color: #64748b;
+}
+
+.plan ul{
+  list-style: none;
+  text-align: left;
+  margin: 25px 0;
+}
+
+.plan ul li{
+  margin-bottom: 10px;
+}
+
+.plan button{
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.plan .outline{
+  background: #fff;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+}
+
+.plan.active{
+  border: 2px solid #6366f1;
+  transform: scale(1.05);
+}
+@media (max-width: 992px){
+  .plans{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 576px){
+  .plans{
+    grid-template-columns: 1fr;
+  }
+  .plan.active{
+    transform: none;
+  }
+}
+
+</style>
+<body>
+    <section class="pricing">
+  <span class="tag">Bảng giá</span>
+  <h1>Chọn gói phù hợp với bạn</h1>
+  <p class="sub">Linh hoạt và phù hợp với mọi nhu cầu học tập</p>
+  <div class="plans">
+    <div class="plan">
+      <h3>Cơ bản</h3>
+      <h2>499.000đ<span>/tháng</span></h2>
+      <ul>
+        <li>Truy cập 50+ khóa học</li>
+        <li>Học trên mọi thiết bị</li>
+        <li>Hỗ trợ cộng đồng</li>
+        <li>Chứng chỉ</li>
+        <li>Hỗ trợ 1-1</li>
+      </ul>
+      <button>Chọn gói</button>
+    </div>
+    <div class="plan">
+      <h3>Chuyên nghiệp</h3>
+      <h2>999.000đ<span>/tháng</span></h2>
+      <ul>
+        <li>Truy cập tất cả khóa học</li>
+        <li>Học trên mọi thiết bị</li>
+        <li>Hỗ trợ cộng đồng</li>
+        <li>Chứng chỉ sau mỗi khóa</li>
+        <li>Hỗ trợ 1-1 với mentor</li>
+      </ul>
+      <button>Chọn gói</button>
+    </div>
+    <div class="plan">
+      <h3>Doanh nghiệp</h3>
+      <h2 class="contact">Liên hệ</h2>
+      <ul>
+        <li>Tất cả tính năng Pro</li>
+        <li>Quản lý nhóm học viên</li>
+        <li>Báo cáo tiến độ chi tiết</li>
+        <li>Khóa học tùy chỉnh</li>
+        <li>Hỗ trợ chuyên dụng</li>
+      </ul>
+      <button class="outline">Liên hệ</button>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

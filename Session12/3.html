@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<style>
+.footer{
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 50px 80px 20px;
+  font-size: 14px;
+}
+.footertop{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1.2fr;
+  gap: 40px;
+}
+.footer h3, .footer h4{
+  color: #fff;
+  margin-bottom: 12px;
+}
+.footer p{
+  margin-bottom: 8px;
+}
+.social span{
+  margin-right: 10px;
+  cursor: pointer;
+}
+.footerbottom{
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 30px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+@media (max-width: 992px){
+  .footer-top{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 576px){
+  .footer{
+    padding: 40px 20px;
+  }
+  .footer-top{
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom{
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+</style>
+<body>
+    <footer class="footer">
+  <div class="footertop">
+    <div class="col">
+      <h3>EduLearn</h3>
+      <p>Nền tảng học trực tuyến hàng đầu, mang đến trải nghiệm học tập tốt nhất cho mọi người.</p>
+      <div class="social">
+        <span>🐦</span>
+        <span>📘</span>
+        <span>💼</span>
+        <span>▶️</span>
+      </div>
+    </div>
+    <div class="col">
+      <h4>Khóa học</h4>
+      <p>Lập trình</p>
+      <p>Thiết kế</p>
+      <p>Marketing</p>
+      <p>Kinh doanh</p>
+      <p>Ngoại ngữ</p>
+    </div>
+    <div class="col">
+      <h4>Về chúng tôi</h4>
+      <p>Giới thiệu</p>
+      <p>Đội ngũ</p>
+      <p>Sự nghiệp</p>
+      <p>Blog</p>
+      <p>Liên hệ</p>
+    </div>
+    <div class="col">
+      <h4>Hỗ trợ</h4>
+      <p>Trung tâm trợ giúp</p>
+      <p>FAQ</p>
+      <p>Chính sách</p>
+      <p>Điều khoản</p>
+      <p>Bảo mật</p>
+    </div>
+    <div class="col">
+      <h4>Liên hệ</h4>
+      <p>✉ info@edulearn.vn</p>
+      <p>📞 1900 1234</p>
+      <p>📍 Hà Nội, Việt Nam</p>
+    </div>
+  </div>
+  <div class="footerbottom">
+    <p>© 2025 EduLearn. Tất cả quyền được bảo lưu.</p>
+    <p>Được thiết kế với ❤️ bởi EduLearn Team</p>
+  </div>
+</footer>
+
+</body>
+</html>

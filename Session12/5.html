@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+<style>
+*{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.faq{
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.badge{
+  background: #eef2ff;
+  color: #6366f1;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+h1{
+  margin: 15px 0 5px;
+}
+.desc{
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+.faqitem{
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  text-align: left;
+}
+.faqtitle{
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.faqitem.active{
+  background: #6366f1;
+  color: #fff;
+}
+
+.faqitem.active .faq-content{
+  color: #e0e7ff;
+}
+
+.faq-content{
+  padding: 0 20px 16px;
+  line-height: 1.6;
+}
+
+.icon{
+  font-size: 18px;
+}
+@media (max-width: 768px){
+  h1{
+    font-size: 26px;
+  }
+}
+@media (max-width: 576px){
+  h1{
+    font-size: 22px;
+  }
+  .faq-title{
+    font-size: 15px;
+  }
+}
+
+</style>
+<body>
+<section class="faq">
+  <span class="badge">Câu hỏi thường gặp</span>
+  <h1>Bạn có thắc mắc?</h1>
+  <p class="desc">Chúng tôi sẵn sàng giải đáp mọi thắc mắc của bạn</p>
+  <div class="faqitem active">
+    <div class="faq-title">
+      Tôi có thể học trên điện thoại không?
+      <span class="icon">⌃</span>
+    </div>
+    <div class="faqcontent">
+      Có, nền tảng của chúng tôi hoàn toàn tương thích với mọi thiết bị bao gồm
+      điện thoại, tablet và máy tính. Bạn có thể học mọi lúc, mọi nơi.
+    </div>
+  </div>
+  <div class="faqitem">
+    <div class="faqtitle">
+      Chứng chỉ có được công nhận không?
+      <span class="icon">⌄</span>
+    </div>
+  </div>
+  <div class="faqitem">
+    <div class="faqtitle">
+      Tôi có thể hoàn tiền nếu không hài lòng?
+      <span class="icon">⌄</span>
+    </div>
+  </div>
+  <div class="faqitem">
+    <div class="faqtitle">
+      Làm thế nào để liên hệ với giảng viên?
+      <span class="icon">⌄</span>
+    </div>
+  </div>
+  <div class="faqitem">
+    <div class="faqtitle">
+      Tôi có thể tải video về để xem offline không?
+      <span class="icon">⌄</span>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

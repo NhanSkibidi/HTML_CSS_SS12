@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2</title>
+</head>
+<style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body{
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.card{
+  width: 320px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.cardimg{
+  height: 180px;
+  background: linear-gradient(135deg,#5f7cff,#7b5cff);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon{
+  color: white;
+  font-size: 40px;
+}
+.badge{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+.cardbody{
+  padding: 16px;
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.tag{
+  background: #eef1ff;
+  color: #5f7cff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.rating{
+  font-size: 14px;
+}
+
+h3{
+  margin: 8px 0;
+}
+
+.desc{
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.info{
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #666;
+  margin: 12px 0;
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price{
+  color: #5f7cff;
+  font-weight: bold;
+}
+
+button{
+  border: none;
+  background: #3b82f6;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+@media (max-width: 576px){
+  .card{
+    width: 100%;
+  }
+}
+@media (min-width: 577px) and (max-width: 992px){
+  .card{
+    width: 360px;
+  }
+}
+</style>
+<body>
+
+<div class="card">
+  <div class="cardimg">
+    <span class="badge">Bán chạy</span>
+    <div class="icon">&lt;/&gt;</div>
+  </div>
+
+  <div class="cardbody">
+    <div class="top">
+      <span class="tag">Lập trình</span>
+      <span class="rating">⭐ 4.9</span>
+    </div>
+
+    <h3>Lập trình Web Full Stack</h3>
+    <p class="desc">
+      Học lập trình web từ cơ bản đến nâng cao với các công nghệ hiện đại nhất
+    </p>
+
+    <div class="info">
+      <span>⏱ 40 giờ</span>
+      <span>👥 12K+ học viên</span>
+    </div>
+
+    <div class="bottom">
+      <span class="price">2.990.000đ</span>
+      <button>Xem chi tiết</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
