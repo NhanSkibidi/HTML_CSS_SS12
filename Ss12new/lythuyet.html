@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYTHUYET</title>
+</head>
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+body{
+    background-color: #F4F7FC;
+}
+header .inner{
+    background:linear-gradient(90deg, rgb(245, 146, 228), rgb(79, 231, 48));
+    width: 100%;
+    height: 64px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+}
+header h2{
+    font-weight: bold;
+}
+.desktop a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+}
+.search input {
+    background-color: azure;
+    border-radius: 35px;
+    color: azure;
+    padding: 10px 50px;
+    border: none;
+    margin-top: -20px;
+}
+.DFC{
+    display: none;
+}
+.welcome{
+    background-color: white;
+    display: flex;
+    width: 700px;
+    height: 100px;
+    border-radius: 12px;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px;
+}
+</style>
+<body>
+    <!--
+    RWD : responsiv web design: thiết kế web tương thích với nhiều thiết bị
+    I-2 kĩ thuật chính
+    1. Mobile First: thiết kế trên màn hình điện thoại trước sau đó thiết kế lên các màn hình lớn hơn. ( Xu hướng bây giờ)
+    2. Desktop first: thiết kế trên màn hình máy tính trước sau đó thiết kế xuống các màn hình nhỉ hơn
+    II- Các điểm break point: điểm giới hạn trên màn hình
+    1. < 576px
+    2. 676<= X <= 768px     : điện thoại
+    3. 768px <= X <= 992px  : máy tính bảng
+    4. 992px <= X <= 1400px : desktop
+    5. >= 1400px            : Máy tính bản
+    III-Media screen (important ==> viết code Responsive)
+    @media screen and (max-width:  ;) ==> đối với desktop first
+    @media screen and (min-width:  ;) ==> đối với mobile first
+    V-Áp dụng các kĩ thuật responsive khác
+    1. Khi dùng flex:
+    flex-wrap: wrap : khi phần tử không đủ diện tích sẽ tự xuống dòng
+    2. Áp dụng các giá trim kích thước ( % , vh , vw)
+    3. Dùng grid 
+    -->
+    <header>
+    <div class="inner">
+            <h2>E Lơn Ling</h2>
+            <div class="search">
+                <input type="text" placeholder="Tìm khóa học...">
+            </div>
+            <nav class="desktop">
+                <a href="">Khóa học</a>
+                <a href="">Tiến độ</a>
+                <a href="">Hồ sơ</a>
+            </nav>
+            <label for="menu" class="DFC">☰</label>
+        </div>
+        </header>
+        <div class="welcome">
+            <div>
+                <h2>Xin chào, Bạn tôi!</h2>
+                <p>Chúc bạn học tập hiệu quả hôm nay</p>
+            </div>
+            <div>
+                <span>Tiến độ tổng: 68%</span>
+                <div class="progressbar">
+                    <div class="progressfill"></div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
